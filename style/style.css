@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+body,html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: relative;
+    height: 100%;
+}
+.signup, .signin {
+    width: 450px;
+    border: 1px solid lightgrey;
+    padding: 20px 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: all .3s ease-in-out;
+    display: none;
+}
+.active{
+    display: block;
+}
+.title {
+    position: relative;
+}
+.title > input[type="text"],.title > input[type="email"], .title > input[type="password"] {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-family: arial;
+    font-size: 16px;
+    color: grey;
+    border-bottom: 1px solid lightgrey;
+}
+.title {
+   margin-bottom: 25px;
+   font-family: Arial, Helvetica, sans-serif;
+   color: grey;
+}
+.title > label {
+    font-family: arial;
+    font-size: 16px;
+    position: absolute;
+    width: 100%;
+    left: 10px;
+    top: 10px;
+    color: grey;
+    cursor: text;
+    transition: all .3s ease-in-out;
+}
+
+.title > input[type="text"]:focus+label,.title > input[type="email"]:focus+label, .title > input[type="password"]:focus+label,.title > input[type="text"]:valid+label,.title > input[type="email"]:valid+label, .title > input[type="password"]:valid+label {
+    transform: translate(-10px, -25px);
+    font-size: 13px;
+    color: dodgerblue;
+}
+
+.title > input[type="text"]:focus,.title > input[type="email"]:focus, .title > input[type="password"]:focus {
+    outline: none;
+}
+/* -------------------------------------------- */
+
+.signheader{
+    position: relative;
+}
+.signheader::before{
+    width: 40px;
+    height: 2px;
+    background: red;
+    position: absolute;
+    content: "";
+    top: 110%;
+}
+
+/* ------------------------------------------- */
+
+.btn{
+    width: 100%;
+    border: none;
+    background: #354b68;
+    padding: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.btn:active, .btn:focus{
+    outline: none;
+}
+
+/* ------------------------------------------- */
+
+
+
+/* ------------------------------------------- */
